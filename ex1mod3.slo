@@ -1,0 +1,25 @@
+// Escreva um algoritmo que encontre as raízes de uma equação do segundo grau, a partir dos valores a, b e c fornecidos pelo usuário.
+// Dica: Ao executar o algoritmo, fique atento aos valores fornecidos para a, b e c. Lembre-se que o resultado da raiz quadrada de um 
+// número negativo não pertence ao conjunto dos números reais, fazendo com que a resposta mostrada seja [Número Imaginário].
+
+início {
+    
+    inteiro: a;
+    inteiro: b;
+    inteiro: c;
+    inteiro: delta;
+    inteiro: x1;
+    inteiro: x2;    
+    
+    leia("Informe um numero para o valor de A: ", a);
+    leia("Informe um numero para o valor de B: ", b);
+    leia("Informe um numero para o valor de C: ", c);
+    
+    delta = (pot(b,2) - 4 * a * c);
+    x1 = (- b + rad(delta) / 2 * a);
+    x2 = (- b - rad(delta) / 2 * a);
+    
+    escreva("O resultado de delta é : " , delta);
+    escreva("O resultado de x linha é : " , x1);    
+    escreva("O resultado de x duas linhas é : " , x2);
+}

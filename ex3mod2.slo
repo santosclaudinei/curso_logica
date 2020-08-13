@@ -1,0 +1,17 @@
+// Escreva um algoritmo que solicita ao usuário duas informações no formato texto e depois exibe os dois textos fornecidos de forma concatenada.
+// Dica: Utilize o comando concatene para efetuar a concatenação dos valores.
+// O comando concatene junta textos e produz outro como resultado. Por exemplo, para juntar os textos soft e blue, você pode fazer:
+
+início {
+
+caractere: texto1;
+caractere: texto2;
+caractere: palavra;
+
+leia("digite uma palavra: ", texto1);
+leia("digite uma palavra: ", texto2);
+
+palavra = concatene(texto1, texto2);
+
+escreva("A palavra formada pelos dois textos digitados foi: ", palavra);
+}

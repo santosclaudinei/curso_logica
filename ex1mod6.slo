@@ -1,0 +1,36 @@
+tipo contato {
+    caractere: nome;
+    caractere: telefone;
+}
+
+início {
+  
+        arquivo: agenda;
+        caractere: nome;
+        contato: sub;
+        
+        leia("Digite o nome do contato que deseja pesquisar: ", nome);
+        
+        abra(agenda);
+    
+            repita{
+             copie(agenda, sub);
+             avance(agenda);
+                         
+            } enquanto(sub.nome <> nome e não fda (agenda));
+    
+        feche(agenda);
+        
+        se (nome == sub.nome){
+        
+        escreva("O nome digitado foi localizado no arquivo de nome agenda. e as informações do contato é: ", sub.nome, sub.telefone);    
+            
+        }senão {
+            
+        escreva("O nome digiado não foi localizado!");
+        
+        }
+        
+        
+ 
+}

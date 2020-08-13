@@ -1,0 +1,16 @@
+//Escreva um algoritmo que solicita ao usuário 3 valores inteiros via teclado e depois exibe os números fornecidos.
+
+início {
+    
+    inteiro: n1;
+    inteiro: n2;
+    inteiro: n3;
+    
+    leia("Digite o valor desejado para o segundo valor: ", n1);
+    leia("Digite o valor desejado para o segundo valor: ", n2);
+    leia("Digite o valor desejado para o segundo valor: ", n3);
+    
+    escreva("o primeiro valor digitado foi:  " , n1);
+    escreva("o segundo valor digitado foi:  " , n2);
+    escreva("o terceiro valor digitado foi:  " , n3);
+}
